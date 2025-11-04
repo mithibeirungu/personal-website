@@ -1,0 +1,71 @@
+@import url(./base.css);
+
+main{
+    height: 100%;
+    min-height: 100vh;
+    padding: 120px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form{
+    height: 80%;
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid var(--accent-color);
+    background: var(--glass-color);
+    border-radius: 16px;
+    padding: 16px;
+    display: grid;
+    grid: "firstname surname"
+    " email email"
+    "message message"
+    "message message"
+    "button button";
+    align-items: center;
+    gap: 8px;
+    /* justify-content: center; */
+}
+
+form input{
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.first-name{
+    grid-area: firstname;
+}
+
+.surname{
+    grid-area: surname;
+}
+
+.email{
+    grid-area: email;
+}
+
+.email input{
+    width: 100%;
+}
+
+.message{
+    grid-area: message;
+}
+
+.message input{
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+}
+
+.submit{
+    position: relative;
+    grid-area: button;
+    width: 50%;
+    background: var(--accent-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+

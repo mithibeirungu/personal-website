@@ -1,0 +1,22 @@
+@import url(./base.css);
+
+main{
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+article{
+    background: var(--glass-color);
+    border: 1px solid var(--accent-color);
+    margin-top: 16px;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
